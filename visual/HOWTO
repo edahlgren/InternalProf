@@ -1,0 +1,10 @@
+set title "Partition"
+set xlabel "n=size of sequence or list"
+set ylabel "Time (s)"
+set grid
+plot "out-partition.dat" with lines title "list", "out-seq-partition.dat" with lines title "sequence"
+
+set terminal png nocrop size 800,800
+set size square 1,1
+set output "partition.png"
+replot
